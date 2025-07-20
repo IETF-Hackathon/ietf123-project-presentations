@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IETF Hackathon - NTP WG </title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      div.left-column  { width: 49%; float: left; }
+      div.right-column { width: 49%; float: right; }
+
+      div.right-column ~ p { clear: both; }
+      div.right-column ~ ul { clear: both; }
+      div.my-footer {
+        border-top: 1px solid #ccc;
+        font-size: 10pt;
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        height: 30px;
+        width: 100%;
+      }
+      
+      div.my-footer p {
+        margin-top: 10px;
+        height: 30px;
+      }
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# NTP WG IETF Hackathon
+      
+IETF 123
+      
+19-20 July 2025
+
+Madrid, Spain 
+
+      
+---
+
+# Hackathon Plan
+
+Focus on NTPv5, NTS pools and NTS for CSPTP/PTP:
+ - https://datatracker.ietf.org/doc/draft-ietf-ntp-ntpv5/
+ - https://datatracker.ietf.org/doc/draft-venhoek-nts-pool/
+ - https://datatracker.ietf.org/doc/draft-ietf-ntp-nts-for-ptp/
+        
+<div class="my-footer"><p>IETF Hackathon - NTP WG </p></div>       
+---
+
+# What got done
+
+NTS Pool:
+ - Got a pool running
+ - Added 3 servers from different parties
+ - More servers still welcome
+
+NTPv5:
+ - Upgraded implementation (ntpd-rs) to latest version of the draft
+        
+<div class="my-footer"><p>IETF Hackathon - NTP WG </p></div>       
+---
+        
+# What we learned
+
+Pool works reasonably well, servers are relatively straightforward to setup
+ - But missing some functionality for properly deduplicating assigned servers
+        
+<div class="my-footer"><p>IETF Hackathon - NTP WG </p></div>      
+
+---
+ # Wrap up
+  ---  
+        
+        
+.left-column[ 
+#### Team members:
+
+ - K. O'Donoghue
+ - D. Sibold
+ - H. Gerstung
+ - D. Venhoek
+ - R.J. Nijveld
+ - A. Subbiah (remote)
+ - M. Langer (remote)
+
+#### Contacts:
+  
+  - For NTS Pool: D. Venhoek (david@venhoek.nl)  
+        ]
+.right-column[ 
+#### Other links:
+        
+ - Experimental pool ke: ke.experimental.ntspool.trifectatech.org
+ - pool time servers:
+   - chrony: https://github.com/pendulum-project/chrony
+   - ntpd-rs: https://github.com/pendulum-project/ntpd-rs
+ - ntpv5 implementations:
+   - chrony: https://github.com/mlichvar/chrony-ntp5
+   - ntpd-rs: https://github.com/pendulum-project/ntpd-rs
+        ]
+
+<div class="my-footer"><p>IETF Hackathon - NTP WG </p></div>
+        
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
